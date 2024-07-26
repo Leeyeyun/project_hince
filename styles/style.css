@@ -73,18 +73,18 @@ main .intro .left .main_swiper .swiper-slide .main_pd p:nth-child(3) {
     margin:16px 0 28px;
 }
 /* view more 디자인 */
-main .intro .left .main_swiper .swiper-slide .main_pd a {
+main .more {
     font-family: "Readex Pro", sans-serif; color:#A36D6A;
     border:1px solid #A36D6A; height:44px; padding:0 16px; display:inline-block;
     display:inline-flex; align-items:center; justify-content:center;
 }
-main .intro .left .main_swiper .swiper-slide .main_pd a::after {
+main .more::after {
     content:''; display:inline-block; margin-left:-24px; opacity:0;
     background-image:url(../images/arrow_right_icn.svg); width:24px; height:24px;
     background-position:center; background-repeat:no-repeat; background-size:cover;
     transition:opacity 0.5s, margin-left 0.5s;
 }
-main .intro .left .main_swiper .swiper-slide .main_pd a:hover::after {
+main .more:hover::after {
     opacity:1; margin-left:4px;
 }
 /* 페이지네이션 디자인 */
@@ -111,7 +111,7 @@ main .intro .right > .gradient {
 }
 /* e:intro */
 /* --- 2. most loved --- */
-main .mloved {position:relative; text-align:center;}
+main .mloved {position:relative; text-align:center; height:825px;}
 main .mloved > p {position:absolute; left:0; top:0; z-index:900;}
 main .mloved > p:nth-child(2) {z-index:10000;}
 main .mloved h1 {
@@ -128,3 +128,23 @@ main .mloved .mloved_swiper .mloved_pd a img {transition:transform 0.5s;}
 main .mloved .mloved_swiper .mloved_pd a img:hover {
     transform:translateY(-16px);
 }
+/* e:most loved */
+/* --- 3. pd_banner --- */
+main .pd_banner {height:780px; display:flex; align-items:center; justify-content:flex-start; position:relative;}
+main .pd_banner .left, main .pd_banner .right {width:50%; height:100%;}
+main .pd_banner .left {
+    background-image:url(../images/model_2.jpg); background-position:center;
+    background-size:cover;
+}
+main .pd_banner > p {position:absolute; left:40%; top:18%;}
+main .pd_banner .right {
+    background-color:#EFEBE4; border-bottom-right-radius:350px;
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;
+}
+main .pd_banner .right h1 {font-size:2.813rem; font-weight:700; color:#A36D6A;}
+main .pd_banner .right h2 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:1.125rem; font-weight:300; color:#A36D6A;
+    text-transform:uppercase; margin:16px 0 32px;
+}
+main .pd_banner .right p {font-size:1.5rem; font-weight:500; color:#A36D6A; margin-bottom:48px;}
