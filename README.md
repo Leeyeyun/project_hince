@@ -3,5 +3,5 @@
 ### 기존 웹페이지 바로가기
 https://hince.co.kr/
 ### 힌스 리디자인 웹페이지 바로가기
-http://eey1741.dothome.co.kr/project_hince/index.html
+http://eey1741.dothome.co.kr/project_hince/index.html<br>
 https://hince-yeyun.netlify.app/
