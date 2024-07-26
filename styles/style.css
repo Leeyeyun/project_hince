@@ -1,0 +1,130 @@
+body {background-color:#F8F4F3; overflow-x:hidden;}
+/* -------- header -------- */
+header {
+    position:fixed; left:0; top:0; z-index:99999;
+    display:flex; flex-flow:column nowrap;
+}
+header .top_banner {
+    width:100vw; padding:0 20px; height:48px; background-color:#A36D6A; display:inline-flex;
+    justify-content:center; align-items:center;
+}
+@keyframes display {
+    0% {height:48px; overflow:visible;}
+    100% {height:0; overflow:hidden;}
+}
+header .top_banner p:first-child {
+    color:#fff; display:flex; align-items:center;
+}
+header .top_banner p em {font-weight:600; margin:0 4px;}
+header .top_banner p:first-child::after {
+    content:''; display:inline-block;
+    background-image:url(../images/ticket_icn.svg);
+    background-repeat:no-repeat; background-size:cover;
+    width:24px; height:24px; margin-left:8px; transform:translateY(-1px);
+}
+header .top_banner .close {position:absolute; right:20px; width:24px; height:48px; display:flex;}
+header .top_banner .close img {width:100%;}
+header .h_main {
+    background:linear-gradient(180deg, #fff, rgba(255,255,255,0.7) , rgba(255,255,255,0)); height:120px; display:flex; padding:0 70px; width:100vw;
+    justify-content:space-between; align-items:center; position:relative;
+}
+header .h_main h1 {position:relative; z-index:10;}
+header .h_main h1 a {}
+header .h_main h1 a img {width:100%;}
+header .h_main nav {position:absolute; width:100%; z-index:1; left:0;}
+header .h_main nav .gnb {
+    display:flex; justify-content:center; align-items:flex-start; height:max-content;
+}
+header .h_main nav .gnb li {margin-right:80px;}
+header .h_main nav .gnb li:last-child {margin-right:0;}
+/* gnb li hover 시 라인 나타나기 */
+header .h_main nav .gnb li a {
+    font-family: "Readex Pro", sans-serif; display:flex; flex-flow:column nowrap; justify-content:flex-start; align-items:center;
+    color:#A36D6A; font-weight:500; line-height:32px;
+}
+header .h_main nav .gnb li a::after {
+    content:''; display:inline-block; width:0; height:2px; background-color:#A36D6A;
+    transition:width 0.5s;
+}
+header .h_main nav .gnb li a:hover::after {width:100%;}
+/* sub 초기값 숨기기 */
+header .h_main nav .gnb li .sub {display:none;}
+header .h_main nav .gnb li .sub a {}
+header .h_main .lnb {position:relative; z-index:10; display:flex;}
+header .h_main .lnb a {width:36px; height:36px; margin-right:6px; transition:opacity 0.3s;}
+header .h_main .lnb a:hover {opacity:0.6;}
+header .h_main .lnb a:last-child {margin-right:0;}
+header .h_main .lnb a img {width:100%;}
+
+/* -------- main -------- */
+main {}
+/* --- 1. intro --- */
+main .intro {height:100vh; display:flex; align-items:center;}
+main .intro .left ,main .intro .right {width:50%; height:100%; position:relative; text-align:center;}
+/* 왼쪽 제품 swipe */
+main .intro .left {display:flex; justify-content:center; align-items:center;}
+main .intro .left > p {position:absolute; left:25%; top:35%; width:50%; opacity:0.1;}
+main .intro .left > p > img {width:100%;}
+main .intro .left .main_swiper {}
+main .intro .left .main_swiper .swiper-slide {}
+main .intro .left .main_swiper .swiper-slide .main_pd h2 {font-size:2rem; font-weight:700; color:#A36D6A;}
+main .intro .left .main_swiper .swiper-slide .main_pd p:nth-child(3) {
+    font-size:1.25rem; font-weight:500; color:#A36D6A;
+    margin:16px 0 28px;
+}
+/* view more 디자인 */
+main .intro .left .main_swiper .swiper-slide .main_pd a {
+    font-family: "Readex Pro", sans-serif; color:#A36D6A;
+    border:1px solid #A36D6A; height:44px; padding:0 16px; display:inline-block;
+    display:inline-flex; align-items:center; justify-content:center;
+}
+main .intro .left .main_swiper .swiper-slide .main_pd a::after {
+    content:''; display:inline-block; margin-left:-24px; opacity:0;
+    background-image:url(../images/arrow_right_icn.svg); width:24px; height:24px;
+    background-position:center; background-repeat:no-repeat; background-size:cover;
+    transition:opacity 0.5s, margin-left 0.5s;
+}
+main .intro .left .main_swiper .swiper-slide .main_pd a:hover::after {
+    opacity:1; margin-left:4px;
+}
+/* 페이지네이션 디자인 */
+main .intro .left .swiper-pagination {
+    background-color:#d9d9d9; width:40%; height:4px; left:30%;
+    border-radius:2px; top:86%;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    height:100%; display:inline-block;
+    background-color:#A36D6A; border-radius:2px;
+}
+/* 오른쪽 모델 swipe */
+main .intro .right .model_swiper {}
+main .intro .right .model_swiper .swiper-slide .main_model {/* 모델이미지 공통 속성 */
+    position:relative;
+    background-image:url(../images/model_1.jpg); width:100%; height:100vh;
+    background-position:center; background-size:cover; background-repeat:no-repeat;
+}
+main .intro .right .model_swiper .swiper-slide .model_2 {background-image:url(../images/model_2.jpg);}
+main .intro .right .model_swiper .swiper-slide .model_3 {background-image:url(../images/model_3.jpg);}
+/* 가운데 gradient */
+main .intro .right > .gradient {
+    height:100%; width:20%; position:absolute; left:0; top:0; z-index:9999; background:linear-gradient(90deg, #F8F4F3, rgba(248, 244, 243, 0));
+}
+/* e:intro */
+/* --- 2. most loved --- */
+main .mloved {position:relative; text-align:center;}
+main .mloved > p {position:absolute; left:0; top:0; z-index:900;}
+main .mloved > p:nth-child(2) {z-index:10000;}
+main .mloved h1 {
+    font-family: "Readex Pro", sans-serif; padding:100px 0 45px;
+    font-size:2.813rem; font-weight:500; color:#A36D6A;
+}
+/* mloved 제품 슬라이드 */
+main .mloved .mloved_swiper {z-index:1000; padding-left:36px;}
+main .mloved .mloved_swiper .mloved_pd {}
+main .mloved .mloved_swiper .mloved_pd h2 {font-size:1.125rem; font-weight:700; margin-bottom:12px;}
+main .mloved .mloved_swiper .mloved_pd > p {font-weight:700; color:#A36D6A;}
+main .mloved .mloved_swiper .mloved_pd > p em {font-size:0.875rem; color:#4e4e4e; text-decoration:line-through; margin-right:4px;}
+main .mloved .mloved_swiper .mloved_pd a img {transition:transform 0.5s;}
+main .mloved .mloved_swiper .mloved_pd a img:hover {
+    transform:translateY(-16px);
+}

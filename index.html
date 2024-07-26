@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hince</title>
+    <!-- 웹글꼴 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- JS 연결 -->
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="top_banner">
+            <p>회원가입 시, <em>신규회원 전용 50% 쿠폰</em> 증정</p>
+            <p class="close"><img src="./images/close_icn.svg" alt="배너 닫기"></p>
+        </a>
+        <div class="h_main">
+            <h1><a href="#"><img src="./images/logo_hince.svg" alt="힌스"></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">FRAGRANCE</a>
+                        <ul class="sub">
+                            <a href="#">Candle</a>
+                            <a href="#">Perfume</a>
+                            <a href="#">Hand Cream</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">MAKE UP</a>
+                        <ul class="sub">
+                            <a href="#">Lip</a>
+                            <a href="#">Eye</a>
+                            <a href="#">Face</a>
+                            <a href="#">Set</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">SKIN CARE</a>
+                        <ul class="sub">
+                            <a href="#">Cleansing</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">TOOL</a>
+                        <ul class="sub">
+                            <a href="#">Brush</a>
+                            <a href="#">Puff</a>
+                            <a href="#">Object</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lnb">
+                <a href="#"><img src="./images/search_icn.svg" alt=""></a>
+                <a href="#"><img src="./images/cart_icn.svg" alt=""></a>
+                <a href="#"><img src="./images/profile_icn.svg" alt=""></a>
+                <a href="#"><img src="./images/hamburger_icn.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!----- 1. intro ----->
+        <div class="intro">
+            <!-- 왼쪽 제품 swiper -->
+            <div class="left">
+                <!-- 제품 하단 로고이미지 -->
+                <p><img src="./images/logo_hince.svg" alt=""></p>
+                <div class="swiper main_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main_slide_1">
+                            <div class="main_pd">
+                                <p><img src="./images/main_001.png" alt=""></p>
+                                <h2>트루 디멘션 래디언스 밤</h2>
+                                <p>피부에 차오르는 글로우 광채</p>
+                                <a href="#">VIEW MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main_slide_2">
+                            <div class="main_pd">
+                                <p><img src="./images/mloved_004.png" alt=""></p>
+                                <h2>세컨 스킨 글로우 쿠션</h2>
+                                <p>귀티 나는 윤광 피부를 선사하는 세미 글로우 쿠션</p>
+                                <a href="#">VIEW MORE</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide main_slide_3">
+                            <div class="main_pd">
+                                <p><img src="./images/mloved_005.png" alt=""></p>
+                                <h2>트루 디멘션 레이어링 치크</h2>
+                                <p>피부가 비칠 듯 투명한 색감의 레이어링 치크</p>
+                                <a href="#">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 오른쪽 모델 swiper -->
+            <div class="right">
+                <div class="swiper model_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide model_slide_1">
+                            <div class="main_model model_1"><div class="gradient"></div></div>
+                        </div>
+                        <div class="swiper-slide model_slide_2">
+                            <div class="main_model model_2"><div class="gradient"></div></div>
+                        </div>
+                        <div class="swiper-slide model_slide_3">
+                            <div class="main_model model_3"><div class="gradient"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 중앙 그라디언트 -->
+                <div class="gradient"></div>
+            </div>
+        </div>
+        <!----- 2. most loved ----->
+        <div class="mloved">
+            <p><img src="./images/mostloved_deco.png" alt=""></p>
+            <p><img src="./images/mostloved_deco_left.png" alt=""></p>
+            <h1>MOST LOVED</h1>
+            <div class="swiper mloved_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide mloved_1">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_001.png" alt=""></a>
+                            <h2>무드 인핸서 마뜨 립스틱</h2>
+                            <p><em>19,000원</em> 15,200원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mloved_2">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_002.png" alt=""></a>
+                            <h2>뉴 뎁스 아이섀도우</h2>
+                            <p><em>18,000원</em> 15,300원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mloved_3">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_003.png" alt=""></a>
+                            <h2>트루 디멘션 래디언스 밤</h2>
+                            <p>29,000원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mloved_4">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_004.png" alt=""></a>
+                            <h2>세컨 스킨 글로우 쿠션</h2>
+                            <p><em>34,000원</em> 23,900원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mloved_5">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_005.png" alt=""></a>
+                            <h2>트루 디멘션 레이어링 치크</h2>
+                            <p><em>29,000원</em> 23,200원</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide mloved_6">
+                        <div class="mloved_pd">
+                            <a href="#"><img src="./images/mloved_006.png" alt=""></a>
+                            <h2>트루 디멘션 하이라이터</h2>
+                            <p><em>29,000원</em> 20,900원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
