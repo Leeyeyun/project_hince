@@ -132,7 +132,7 @@ main .mloved .mloved_swiper .mloved_pd a img:hover {
 /* --- 3. pd_banner --- */
 main .pd_banner {height:780px; display:flex; align-items:center; justify-content:flex-start; position:relative;}
 main .pd_banner .left, main .pd_banner .right {width:50%; height:100%;}
-main .pd_banner .left {
+main .pd_banner > .left {
     background-image:url(../images/model_2.jpg); background-position:center;
     background-size:cover;
 }
@@ -147,4 +147,177 @@ main .pd_banner .right h2 {
     font-size:1.125rem; font-weight:300; color:#A36D6A;
     text-transform:uppercase; margin:16px 0 32px;
 }
-main .pd_banner .right p {font-size:1.5rem; font-weight:500; color:#A36D6A; margin-bottom:48px;}
+main .pd_banner .right p {font-size:1.25rem; font-weight:500; color:#A36D6A; margin-bottom:48px;}
+/* e:pd_banner */
+/* --- 4. make-up --- */
+main .makeup {text-align:center; max-width:1640px; margin:0 auto;}
+main .makeup h1 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:2.813rem; font-weight:500; color:#A36D6A;
+    padding:140px 0 40px;
+}
+main .makeup .category {
+    display:inline-flex; justify-content:center; align-items:center;
+    position:relative;
+}
+main .makeup .category .cg_bg {
+    display:inline-block;
+    width:106px; height:47px; border-radius:40px; background-color:#A36D6A;
+    position:absolute; z-index:-1; left:0;
+}
+main .makeup .category > a {
+    font-family: "Readex Pro", sans-serif;
+    font-size:1.125rem; font-weight:500; color:#A36D6A;
+    width:106px; line-height:47px; display:inline-block;
+}
+main .makeup .category > a:nth-child(2) {color:#fff; font-weight:400;}
+main .makeup .sub_bg {
+    width:100%; height:max-content; display:flex; justify-content:center;
+    margin-top:24px;
+}
+main .makeup .sub_bg .sub_cg {
+    justify-content:center; align-items:center;
+    background-color:#fff;
+    display:none; width:max-content; padding:0 36px; height:max-content;
+    border-radius:80px;
+}
+main .makeup .sub_bg .sub_cg:first-child {display:flex;}
+main .makeup .sub_bg .sub_cg > li {margin-right:36px;}
+main .makeup .sub_bg .sub_cg > li:last-child {margin-right:0;}
+main .makeup .sub_bg .sub_cg > li > a {
+    font-size:0.875rem; font-weight:700; color:#4e3836; display:inline-block;
+    line-height:49px; border-bottom:3px solid rgba(78, 56, 54, 0);
+}
+main .makeup .sub_bg .sub_cg > li:first-child > a {border-bottom:3px solid rgba(78, 56, 54, 1);}
+/* view more */
+main .makeup .more_link {text-align:right; margin:26px 0 10px;}
+main .makeup .more_link .more {border:none;}
+/* item_wrap */
+main .makeup .item_wrap {display:none; flex-flow:row wrap; justify-content:flex-start;}
+main .makeup .item_lip {display:flex;}
+/* item */
+main .makeup .item_wrap .item {width:calc((100% - 60px) / 4); margin-right:20px;}
+main .makeup .item_wrap .item:first-child,
+main .makeup .item_wrap .item:nth-child(2),
+main .makeup .item_wrap .item:nth-child(3),
+main .makeup .item_wrap .item:nth-child(4) {margin-bottom:50px;}
+main .makeup .item_wrap .item:nth-child(4), main .makeup .item_wrap .item:last-child {margin-right:0;}
+main .makeup .item_wrap .item p {position:relative;}
+main .makeup .item_wrap .item p img {width:100%;}
+main .makeup .item_wrap .item p .pd_more {
+    position:absolute; bottom:24px; left:0; width:calc(100% - 40px); margin:0 20px; line-height:44px; border:1px solid #fff; background-color:transparent;
+    font-weight:500; color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    display:none; /* 버튼 초기값 숨기기 */
+}
+main .makeup .item_wrap .item p .pd_more::after {
+    content:''; display:inline-block;
+    background-repeat:no-repeat; background-size:cover;
+    width:24px; height:24px; background-image:url(../images/arrow_right_icn.svg); filter:brightness(6); margin-left:12px;
+}
+/* item info */
+main .makeup .item_wrap .item .btm {padding:12px 6px; display:flex; justify-content:space-between; align-items:flex-start;}
+main .makeup .item_wrap .item .btm .info {text-align:left;}
+main .makeup .item_wrap .item .btm .info h2 {font-size:1.125rem; font-weight:700;}
+main .makeup .item_wrap .item .btm .info .price {font-weight:700; color:#A36D6A; margin-top:16px;}
+main .makeup .item_wrap .item .btm .info .price del {font-size:0.875rem; color:#4e4e4e; text-decoration:line-through; margin-right:6px; font-weight:500;}
+/* 좋아요&장바구니 버튼 */
+main .makeup .item_wrap .item .btm .user_like * {border:0; width:30px;}
+main .makeup .item_wrap .item .btm .user_like .like_btn.filled img {content:url(../images/like_fill_icn.svg);}
+main .makeup .item_wrap .item .btm .user_like .cart_btn.filled img {content:url(../images/cart_fill_icn.svg);}
+/* e:make-up */
+/* 5. brand_banner_2 */
+main .brand_banner {
+    margin-top:140px; background-image:url(../images/brand_banner.jpg);
+    padding:100px 140px; height:600px; background-position:center;
+    background-repeat:no-repeat; background-size:cover;
+    display:flex; flex-flow:column nowrap; align-items:flex-start; justify-content:space-between;
+}
+main .brand_banner .brand_txt {}
+main .brand_banner .brand_txt h1 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:2.938rem; font-weight:500; color:#fff;
+}
+main .brand_banner .brand_txt p:nth-child(2) {margin:46px 0 16px}
+main .brand_banner .brand_txt p span {
+    font-family: "Readex Pro", sans-serif;
+    font-size:2.25rem; color:#fff;
+}
+main .brand_banner .brand_txt p img {filter:brightness(6); width:15%; margin-left:10px;}
+main .brand_banner .brand_txt p:last-child {font-size:1.25rem; color:#fff; font-weight:600; line-height:1.5;}
+main .brand_banner .more {border:0; background-color:#fff;}
+/* 6. pd_banner 2 */
+main .pd_banner_2 {
+    height:780px; display:flex; align-items:center; justify-content:flex-start; position:relative;
+    margin-top:140px;
+}
+main .pd_banner_2 .left, main .pd_banner_2 .right {width:50%; height:100%;}
+main .pd_banner_2 .left {
+    background-color:#E0D5DD; border-bottom-left-radius:350px;
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;
+}
+main .pd_banner_2 .left h1 {font-size:2.813rem; font-weight:700; color:#A36D6A;}
+main .pd_banner_2 .left h2 {
+    color:#A36D6A; margin:6px 0 32px;
+}
+main .pd_banner_2 .left h2 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:1.125rem; font-weight:300; color:#A36D6A;
+    text-transform:uppercase; margin:16px 0 32px;
+}
+main .pd_banner_2 .left > p {font-size:1.25rem; font-weight:500; color:#A36D6A; margin-bottom:48px;}
+main .pd_banner_2 > p {position:absolute; left:37.5%; top:20%; width:25%;}
+main .pd_banner_2 > p img {width:100%;}
+main .pd_banner_2 > .right {
+    background-image:url(../images/model_4.jpg); background-position:center;
+    background-size:cover;
+}
+/* e:brand_banner_2 */
+/* 6. event_banner */
+main .event {display:flex; align-items:center; margin-top:140px;}
+main .event .event_banner {width:50%; height:450px; overflow:hidden;}
+main .event a {
+    width:100%; display:flex; flex-flow:column nowrap; justify-content:center; align-items:center; background-repeat:no-repeat;
+    background-image:url(../images/event_banner_1.jpg);
+    height:100%; background-size:100%; background-position:center;
+    transition:background-size 0.3s;
+}
+main .event .event_banner:last-child a {background-image:url(../images/event_banner_2.jpg);}
+main .event a:hover {background-size:105%;}
+main .event a * {color:#fff; text-transform:uppercase;}
+main .event a h1 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:1.125rem;
+}
+main .event a h2 {
+    font-family: "Readex Pro", sans-serif;
+    font-size:2.25rem; font-weight:600;
+    margin:34px 0 22px;
+}
+main .event a p {font-size:1.25rem; font-weight:500;}
+/* -------- footer -------- */
+footer {background-color:#A36D6A; margin-top:140px; padding:70px; display:flex; justify-content:space-between; align-items:flex-start;}
+footer .left {}
+footer .left a {}
+footer .left p {color:#fff;}
+footer .left p:nth-child(2) {font-weight:300; line-height:1.7; margin:36px 0;}
+footer .left p a {color:#fff; transition:opacity 0.3s;}
+footer .left a:hover {opacity:0.7;}
+footer .right {display:flex; align-items:flex-start; justify-content:flex-end;}
+footer .right * {color:#fff;}
+footer .right a {transition:opacity 0.3s;}
+footer .right a:hover {opacity:0.7;}
+footer .right > div {margin-left:140px;}
+footer .right .center {margin-left:0;}
+footer .right h2 {
+    font-family: "Readex Pro", sans-serif;
+    font-weight:700; text-transform:uppercase; margin-bottom:16px;
+}
+footer .right h2 a {font-weight:700;}
+footer .right h2 a:hover {opacity:0.7;}
+footer .right div p:nth-child(2),
+footer .right div a:nth-child(2) {margin-bottom:8px;}
+footer .right div a {display:block;}
+footer .right .center h2 a,
+footer .right .sns_link a {display:inline-block;} 
+footer .right .partner {margin-top:38px;}
