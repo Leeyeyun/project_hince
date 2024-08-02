@@ -24,54 +24,25 @@ const swiper2 = new Swiper('.model_swiper', {
   },
 });
 
-/* let isSyncing1 = false;
-let isSyncing2 = false; */
+let isSyncingSwiper1 = false;
+let isSyncingSwiper2 = false;
 
-// main_swiper와 model_swiper의 인스턴스 생성
-/* const swiper1 = new Swiper('.main_swiper', {
-  speed: 500,
-  effect: '',
-  autoplay: {},
-  slidesPerView: 1,
-  loop: true,
-  loopAdditionalSlides: 1,  // loop가 자연스럽게 되도록 추가 슬라이드를 생성
-  pagination: {
-    el: '.left .swiper-pagination',
-    type: 'progressbar',
-  },
-}); */
-
-// intro 모델 스와이프 인스턴스 생성
-/* const swiper2 = new Swiper('.model_swiper', {
-  speed: 500,
-  effect: '',
-  autoplay: {},
-  slidesPerView: 1,
-  loop: true,
-  loopAdditionalSlides: 1,  // loop가 자연스럽게 되도록 추가 슬라이드를 생성
-  pagination: {
-    el: '.left .swiper-pagination',
-    type: 'progressbar',
-  },
-}); */
-
-// swiper1에서 slideChange 이벤트 발생 시 swiper2 동기화
-/* swiper1.on('slideChange', function () {
-  if (!isSyncing1) {
-    isSyncing2 = true;
-    swiper2.slideToLoop(swiper1.realIndex);
+// Swiper 1의 슬라이드 변경 이벤트 리스너
+swiper1.on('slideChange', function() {
+  if (!isSyncingSwiper1) { // Swiper 2가 변경 중이 아닐 때만 실행
+    isSyncingSwiper2 = true; // Swiper 2 동기화 시작
+    swiper2.slideTo(swiper1.realIndex); // Swiper 2의 슬라이드 이동
   }
-  isSyncing1 = false;
-}); */
-
-// swiper2에서 slideChange 이벤트 발생 시 swiper1 동기화
-/* swiper2.on('slideChange', function () {
-  if (!isSyncing2) {
-    isSyncing1 = true;
-    swiper1.slideToLoop(swiper2.realIndex);
+  isSyncingSwiper1 = false; // 동기화 완료 후 플래그 리셋
+});
+// Swiper 2의 슬라이드 변경 이벤트 리스너
+swiper2.on('slideChange', function() {
+  if (!isSyncingSwiper2) { // Swiper 1이 변경 중이 아닐 때만 실행
+    isSyncingSwiper1 = true; // Swiper 1 동기화 시작
+    swiper1.slideTo(swiper2.realIndex); // Swiper 1의 슬라이드 이동
   }
-  isSyncing2 = false;
-}); */
+  isSyncingSwiper2 = false; // 동기화 완료 후 플래그 리셋
+});
 
 
 //상단 배너 close 버튼 클릭 시 없어지기
@@ -178,7 +149,6 @@ function animation(){
 lip_wrap_item.forEach((element, index)=>{
   const overlay = element.querySelector('.overlay');
   item_type = 'lip'
-  console.log(element, index)
   element.children[0].style.backgroundImage = `url(../images/${item_type}_00${index + 1}.jpg)`;
   overlay.style.backgroundImage = `url(../images/${item_type}m_00${index + 1}.jpg)`;
   element.children[0].addEventListener('mouseover', (e) => {
@@ -198,7 +168,6 @@ lip_wrap_item.forEach((element, index)=>{
 eye_wrap_item.forEach((element, index)=>{
   const overlay = element.querySelector('.overlay');
   item_type = 'eye'
-  console.log(element, index)
   element.children[0].style.backgroundImage = `url(../images/${item_type}_00${index + 1}.jpg)`;
   overlay.style.backgroundImage = `url(../images/${item_type}m_00${index + 1}.jpg)`;
   element.children[0].addEventListener('mouseover', (e) => {
@@ -218,7 +187,6 @@ eye_wrap_item.forEach((element, index)=>{
 face_wrap_item.forEach((element, index)=>{
   const overlay = element.querySelector('.overlay');
   item_type = 'face'
-  console.log(element, index)
   element.children[0].style.backgroundImage = `url(../images/${item_type}_00${index + 1}.jpg)`;
   overlay.style.backgroundImage = `url(../images/${item_type}m_00${index + 1}.jpg)`;
   element.children[0].addEventListener('mouseover', (e) => {
@@ -238,7 +206,6 @@ face_wrap_item.forEach((element, index)=>{
 tool_wrap_item.forEach((element, index)=>{
   const overlay = element.querySelector('.overlay');
   item_type = 'tool'
-  console.log(element, index)
   element.children[0].style.backgroundImage = `url(../images/${item_type}_00${index + 1}.jpg)`;
   element.children[0].addEventListener('mouseover', (e) => {
     e.preventDefault();
