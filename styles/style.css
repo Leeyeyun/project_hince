@@ -202,24 +202,37 @@ main .makeup .item_wrap .item:nth-child(2),
 main .makeup .item_wrap .item:nth-child(3),
 main .makeup .item_wrap .item:nth-child(4) {margin-bottom:50px;}
 main .makeup .item_wrap .item:nth-child(4), main .makeup .item_wrap .item:last-child {margin-right:0;}
-main .makeup .item_wrap .item p {position:relative;}
-main .makeup .item_wrap .item p img {width:100%;}
-main .makeup .item_wrap .item p .pd_more {
-    position:absolute; bottom:24px; left:0; width:calc(100% - 40px); margin:0 20px; line-height:44px; border:1px solid #fff; background-color:transparent;
-    font-weight:500; color:#fff;
-    display:flex; align-items:center; justify-content:center;
-    /* display:none; */ /* 버튼 초기값 숨기기 */
+main .makeup .item_wrap .item .images {
+    background-image:url(../images/lip_001.jpg); width:100%; height:480px;
+    background-position:center; background-size:cover; background-repeat:no-repeat;
+    position:relative; transition: opacity 0.5s ease;
 }
-main .makeup .item_wrap .item p .pd_more::after {
+main .makeup .item_wrap .item .images .overlay {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; z-index:1; pointer-events: none;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    opacity: 0; transition: opacity 0.5s ease;
+}
+main .makeup .item_wrap .item img {width:100%;}
+main .makeup .item_wrap .item .images .pd_more {
+    position:absolute; bottom:24px; left:0; width:calc(100% - 40px); margin:0 20px; line-height:44px; border:1px solid #fff; background-color:rgba(255, 255, 255, 0);
+    font-weight:500; color:#fff; z-index:5;
+    display:flex; align-items:center; justify-content:center;
+    transition:background-color 0.5s;
+}
+main .makeup .item_wrap .item .pd_more:hover {
+    background-color:rgba(255, 255, 255, 0.3);
+}
+main .makeup .item_wrap .item .pd_more::after {
     content:''; display:inline-block;
     background-repeat:no-repeat; background-size:cover;
     width:24px; height:24px; background-image:url(../images/arrow_right_icn.svg); filter:brightness(6); margin-left:12px;
 }
 /* item info */
-main .makeup .item_wrap .item .btm {padding:12px 6px; display:flex; justify-content:space-between; align-items:flex-start;}
+main .makeup .item_wrap .item .btm {padding:16px 6px; display:flex; justify-content:space-between; align-items:flex-start;}
 main .makeup .item_wrap .item .btm .info {text-align:left;}
 main .makeup .item_wrap .item .btm .info h2 {font-size:1.125rem; font-weight:700;}
-main .makeup .item_wrap .item .btm .info .price {font-weight:700; color:#A36D6A; margin-top:16px;}
+main .makeup .item_wrap .item .btm .info .price {font-weight:700; color:#A36D6A; margin-top:14px;}
 main .makeup .item_wrap .item .btm .info .price del {font-size:0.875rem; color:#4e4e4e; text-decoration:line-through; margin-right:6px; font-weight:500;}
 /* 좋아요&장바구니 버튼 */
 main .makeup .item_wrap .item .btm .user_like * {border:0; width:30px;}

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <!-- JS 연결 -->
-    <!-- <script src="./scripts/script.js" defer></script> -->
+    <script src="./scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,31 +34,31 @@
             <nav>
                 <ul class="gnb">
                     <li><a href="#">FRAGRANCE</a>
-                        <ul class="sub">
+                        <div class="sub">
                             <a href="#">Candle</a>
                             <a href="#">Perfume</a>
                             <a href="#">Hand Cream</a>
-                        </ul>
+                        </div>
                     </li>
                     <li><a href="#">MAKE UP</a>
-                        <ul class="sub">
+                        <div class="sub">
                             <a href="#">Lip</a>
                             <a href="#">Eye</a>
                             <a href="#">Face</a>
                             <a href="#">Set</a>
-                        </ul>
+                        </div>
                     </li>
                     <li><a href="#">SKIN CARE</a>
-                        <ul class="sub">
+                        <div class="sub">
                             <a href="#">Cleansing</a>
-                        </ul>
+                        </div>
                     </li>
                     <li><a href="#">TOOL</a>
-                        <ul class="sub">
+                        <div class="sub">
                             <a href="#">Brush</a>
                             <a href="#">Puff</a>
                             <a href="#">Object</a>
-                        </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -71,7 +71,7 @@
         </div>
     </header>
     <main>
-        <!----- 1. intro ----->
+        <!--== 1. intro ==-->
         <div class="intro">
             <!-- 왼쪽 제품 swiper -->
             <div class="left">
@@ -126,7 +126,7 @@
                 <div class="gradient"></div>
             </div>
         </div>
-        <!----- 2. most loved ----->
+        <!--== 2. most loved ==-->
         <div class="mloved">
             <p><img src="./images/mostloved_deco.png" alt=""></p>
             <p><img src="./images/mostloved_deco_left.png" alt=""></p>
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-        <!----- 3. pd_banner ----->
+        <!--== 3. pd_banner ==-->
         <div class="pd_banner">
             <div class="left"><!-- 모델 이미지 백그라운드 --></div>
             <p><img src="./images/mloved_004.png" alt=""></p>
@@ -189,7 +189,7 @@
                 <a href="#" class="more">VIEW MORE</a>
             </div>
         </div>
-        <!----- 4. makeup ----->
+        <!--== 4. makeup ==-->
         <div class="makeup">
             <h1>MAKE-UP</h1>
             <div class="category">
@@ -233,395 +233,479 @@
             <div class="item_container">
                 <div class="item_wrap item_lip">
                     <a href="#" class="item">
-                        <p>
-                            <img src="./images/lip_001.jpg" alt="">
-                            <button type="button" class="pd_more">제품 더 보기</button>
-                        </p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>로 글로우 젤 틴트</h2>
                                 <p class="price">17,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_002.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>슬림 스틱 멜팅 매트</h2>
                                 <p class="price"><del>17,000원</del>14,400원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_003.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드인핸서 워터 리퀴드 글로우</h2>
                                 <p class="price"><del>19,000원</del>15,200원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_004.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>슬림핏 리퀴드 벨벳</h2>
                                 <p class="price">19,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_005.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드인핸서 립 글로우</h2>
                                 <p class="price">17,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_006.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드인핸서 마뜨 립스틱</h2>
                                 <p class="price"><del>19,000원</del>15,200원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/lip_007.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드인핸서 쉬어 립스틱</h2>
                                 <p class="price">19,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="item_wrap item_eye">
                     <a href="#" class="item">
-                        <p><img src="./images/eye_001.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>올라운드 아이 팔레트</h2>
                                 <p class="price">26,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/eye_002.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>뉴 뎁스 아이섀도우</h2>
                                 <p class="price"><del>18,000원</del>15,300원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/eye_003.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>뉴 뎁스 아이섀도우 팔레트</h2>
                                 <p class="price"><del>39,000원</del>27,300원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/eye_004.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>시그니처 브로우 쉐이퍼</h2>
                                 <p class="price"><del>18,000원</del>14,400원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/eye_005.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>시그니처 브로우 펜슬</h2>
                                 <p class="price">20,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/eye_006.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>[Brow Set] 시그니처 쉐이퍼 + 펜슬</h2>
                                 <p class="price"><del>38,000원</del>30,400원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="item_wrap item_face">
                     <a href="#" class="item">
-                        <p><img src="./images/face_001.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>세컨 스킨 에어리 파우더</h2>
                                 <p class="price"><del>29,000원</del>23,200원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_002.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>트루 디멘션 래디언스 밤</h2>
                                 <p class="price">29,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_003.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>세컨 스킨 파운데이션</h2>
                                 <p class="price">36,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_004.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>세컨 스킨 글로우 쿠션</h2>
                                 <p class="price"><del>34,000원</del>23,900원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_005.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>세컨 스킨 메쉬 매트 쿠션</h2>
                                 <p class="price"><del>34,000원</del>27,200원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_006.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>[오로라 에디션] 세컨스킨 글로우쿠션</h2>
                                 <p class="price"><del>34,000원</del>20,400원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_007.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>트루 디멘션 레이어링 치크</h2>
                                 <p class="price"><del>29,000원</del>23,200원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/face_008.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>트루 디멘션 레이어링 하이라이터</h2>
                                 <p class="price"><del>29,000원</del>20,900원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="item_wrap item_tool">
                     <a href="#" class="item">
-                        <p><img src="./images/tool_001.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 파운데이션 브러쉬</h2>
                                 <p class="price">26,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_002.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 치크 브러쉬</h2>
                                 <p class="price">24,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_003.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 아이섀도우 베이스 브러쉬</h2>
                                 <p class="price">18,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_004.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 아이섀도우 포인트 브러쉬</h2>
                                 <p class="price">16,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_005.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 세컨 스킨 글로우 쿠션 퍼프 (5개입)</h2>
                                 <p class="price">10,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_006.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>힌스 세컨 스킨 메쉬 매트 쿠션 퍼프 (5개입)</h2>
                                 <p class="price"><del>34,000원</del>20,400원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_007.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드 리플렉터</h2>
                                 <p class="price">31,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                     <a href="#" class="item">
-                        <p><img src="./images/tool_008.jpg" alt=""></p>
+                        <div class="images">
+                            <span class="pd_more">제품 더 보기</span>
+                            <span class="overlay"></span>
+                        </div>
                         <div class="btm">
                             <div class="info">
                                 <h2>무드 네스트</h2>
                                 <p class="price">22,000원</p>
                             </div>
                             <div class="user_like">
-                                <button type="button" class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></button>
-                                <button type="button" class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></button>
+                                <span class="like_btn"><img src="./images/like_icn.svg" alt="좋아요"></span>
+                                <span class="cart_btn"><img src="./images/cart_icn.svg" alt="장바구니"></span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <!----- 5. brand_banner ----->
+        <!--== 5. brand_banner ==-->
         <div class="brand_banner">
             <div class="brand_txt">
                 <h1>BRAND STORY</h1>
@@ -630,7 +714,7 @@
             </div>
             <a href="#" class="more">VIEW MORE</a>
         </div>
-        <!----- 6. pd_banner_2 ----->
+        <!--== 6. pd_banner_2 ==-->
         <div class="pd_banner_2">
             <div class="left">
                 <h1>세컨 스킨 에어리 파우더</h1>
@@ -641,7 +725,7 @@
             <p><img src="./images/mloved_007.png" alt=""></p>
             <div class="right"><!-- 모델 이미지 백그라운드 --></div>
         </div>
-        <!----- 7. event ----->
+        <!--== 7. event ==-->
         <div class="event">
             <div class="event_banner">
                 <a href="#">
