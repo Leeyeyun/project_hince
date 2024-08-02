@@ -1,5 +1,5 @@
 //intro 제품 스와이프
-/* const swiper1 = new Swiper('.main_swiper', {
+const swiper1 = new Swiper('.main_swiper', {
   speed:500,
   effect:'',
   autoplay:{},
@@ -9,10 +9,10 @@
     el:'.left .swiper-pagination',
     type:'progressbar',
   },
-}); */
+});
 
 //intro 모델 스와이프
-/* const swiper2 = new Swiper('.model_swiper', {
+const swiper2 = new Swiper('.model_swiper', {
   speed:500,
   effect:'',
   autoplay:{},
@@ -22,14 +22,13 @@
     el:'.left .swiper-pagination',
     type:'progressbar',
   },
-}); */
+});
 
-
-let isSyncing1 = false;
-let isSyncing2 = false;
+/* let isSyncing1 = false;
+let isSyncing2 = false; */
 
 // main_swiper와 model_swiper의 인스턴스 생성
-const swiper1 = new Swiper('.main_swiper', {
+/* const swiper1 = new Swiper('.main_swiper', {
   speed: 500,
   effect: '',
   autoplay: {},
@@ -40,10 +39,10 @@ const swiper1 = new Swiper('.main_swiper', {
     el: '.left .swiper-pagination',
     type: 'progressbar',
   },
-});
+}); */
 
 // intro 모델 스와이프 인스턴스 생성
-const swiper2 = new Swiper('.model_swiper', {
+/* const swiper2 = new Swiper('.model_swiper', {
   speed: 500,
   effect: '',
   autoplay: {},
@@ -54,25 +53,25 @@ const swiper2 = new Swiper('.model_swiper', {
     el: '.left .swiper-pagination',
     type: 'progressbar',
   },
-});
+}); */
 
 // swiper1에서 slideChange 이벤트 발생 시 swiper2 동기화
-swiper1.on('slideChange', function () {
+/* swiper1.on('slideChange', function () {
   if (!isSyncing1) {
     isSyncing2 = true;
     swiper2.slideToLoop(swiper1.realIndex);
   }
   isSyncing1 = false;
-});
+}); */
 
 // swiper2에서 slideChange 이벤트 발생 시 swiper1 동기화
-swiper2.on('slideChange', function () {
+/* swiper2.on('slideChange', function () {
   if (!isSyncing2) {
     isSyncing1 = true;
     swiper1.slideToLoop(swiper2.realIndex);
   }
   isSyncing2 = false;
-});
+}); */
 
 
 //상단 배너 close 버튼 클릭 시 없어지기

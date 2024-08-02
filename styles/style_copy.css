@@ -229,10 +229,10 @@ main .makeup .item_wrap .item .pd_more::after {
     width:24px; height:24px; background-image:url(../images/arrow_right_icn.svg); filter:brightness(6); margin-left:12px;
 }
 /* item info */
-main .makeup .item_wrap .item .btm {padding:12px 6px; display:flex; justify-content:space-between; align-items:flex-start;}
+main .makeup .item_wrap .item .btm {padding:16px 6px; display:flex; justify-content:space-between; align-items:flex-start;}
 main .makeup .item_wrap .item .btm .info {text-align:left;}
 main .makeup .item_wrap .item .btm .info h2 {font-size:1.125rem; font-weight:700;}
-main .makeup .item_wrap .item .btm .info .price {font-weight:700; color:#A36D6A; margin-top:16px;}
+main .makeup .item_wrap .item .btm .info .price {font-weight:700; color:#A36D6A; margin-top:14px;}
 main .makeup .item_wrap .item .btm .info .price del {font-size:0.875rem; color:#4e4e4e; text-decoration:line-through; margin-right:6px; font-weight:500;}
 /* 좋아요&장바구니 버튼 */
 main .makeup .item_wrap .item .btm .user_like * {border:0; width:30px;}
